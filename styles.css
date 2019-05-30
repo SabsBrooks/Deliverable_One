@@ -1,0 +1,125 @@
+@font-face {
+	font-family: Fira Sans;
+	src: url(https://fonts.google.com/specimen/Fira+Sans?selection.family=Fira+Sans);
+}
+
+html {
+	font-family: 'Fira Sans', sans-serif;
+	background-color: #F0ECEE;
+	height: 100%; /*Displays full bulldog image*/
+}
+
+body {
+	background-image: none;
+}
+
+.header-container{
+	background-color: #F0ECEE;
+	margin: 10px;
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	font-size: 20px;
+}
+
+li {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+h2 {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+p {
+	color: #88898B;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.clickButton {
+	display: flex;
+	justify-content: center;
+	background-color:#FF4850;
+	color: white; 
+	padding: 10px; 
+	border-radius: 15px;
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 20px;
+	width: 100%;
+	margin-right: 10px; 
+}
+
+.clickButton:hover {
+	background-color: #CCC;
+}
+
+.clickButton2 {
+	display: flex;
+	justify-content: center;
+	background-color:#FF4850;
+	color: white; 
+	padding: 10px; 
+	border-radius: 15px;
+	font-family: 'Fira Sans', sans-serif;
+	width: 100%;
+	font-size: 20px;
+}
+
+.clickButton2:hover {
+	background-color: #CCC;
+}
+
+em {
+	color: #FF4850;
+}
+
+a {
+	text-decoration: none;
+	color: #88898B;
+}
+
+a:hover {
+	color: #FF4850;
+}
+
+@media only screen and (min-width: 768px) {
+	.header-container {
+		background-color: none;
+		display: flex; /*Moves ul up to be centered with Adopt Me*/
+	}
+	
+	.adopt-me {
+		flex-grow: 1;
+	}
+
+	body {
+		background-image: url("bulldog.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100%;
+	}
+	.navbar {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	ul {
+		flex-direction: row;
+		justify-content: flex-end;
+		flex-grow: 3;
+	}
+	.clickButton {
+		width: auto;
+		margin: -10px; /*Centered with other nav links*/
+	}
+	.clickButton2 {
+		width: auto;
+	}
